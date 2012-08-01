@@ -2,7 +2,7 @@ $:.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 require 'sunspot_mongoid'
 
 Mongoid.configure do |config|
-  config.master = Mongo::Connection.new.db('sunspot-mongoid-test')
+  config.connect_to('sunspot-mongoid-test')
 end
 
 # model

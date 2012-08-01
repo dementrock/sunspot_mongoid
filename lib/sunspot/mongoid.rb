@@ -42,6 +42,7 @@ module Sunspot
       private
 
       def criteria(id)
+        binding.pry
         @clazz.criteria.id(id)
       end
     end
