@@ -42,7 +42,7 @@ module Sunspot
       private
 
       def criteria(id)
-        @clazz.criteria.id(id)
+        @clazz.criteria.where(:_id.in => id)
       end
     end
   end
